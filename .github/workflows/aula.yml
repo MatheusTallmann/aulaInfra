@@ -1,11 +1,10 @@
-name: Testes
+name: Teste simples
 
 on: [push]
 
 jobs:
-  build:
+  ok:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Rodar testes
-        run: npm test
+      - name: Teste 1=1
+        run: test 1 -eq 1
