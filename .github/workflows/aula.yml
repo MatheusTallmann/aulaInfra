@@ -1,4 +1,4 @@
-name: Teste simples
+name: Teste push
 
 on: [push]
 
@@ -6,5 +6,4 @@ jobs:
   ok:
     runs-on: ubuntu-latest
     steps:
-      - name: Teste 1=1
-        run: test 1 -eq 1
+      - run: echo "Workflow rodando no push"
